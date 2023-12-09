@@ -9,14 +9,11 @@ const TAB_DATA = [
         id: "skills",
         content: (
           <ul className="list-disc pl-2">
-                <li>React</li>
-                <li>Next.js</li>
-                <li>JavaScript</li>
-                <li>Solidity</li>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>Tailwind CSS</li>
                 <li>Python</li>
+                <li>C Programming</li>
+                <li>Java</li>
+                <li>R Programming</li>
+                <li>SQL Database</li>
           </ul>
         ),
     },
@@ -25,17 +22,10 @@ const TAB_DATA = [
         id: "experiences",
         content: (
           <ul className="list-disc pl-2">
-            <li>ETH Singapore</li>
-            <li>ETH KL</li>
-            <li>ETH Online</li>
-            <li>ETHGlobal Superhack</li>
-            <li>Solana Hyperdrive</li>
-            <li>APUBCC Sparkathon</li>
-            <li>Encode Club</li>
-            <li>Google CTF</li>
-            <li>NUS Grey CTF</li>
-            <li>Tune Protect Hackathon</li>
-            <li>geNFesT Ideathon</li>
+            <li>Internal CTF</li>
+            <li>BAT CTF 2023 </li>
+            <li>Petronas Inter-University CTF</li>
+            <li>Asean Battle of Hackers (ABOH2023)</li>
           </ul>
         ),
     },
@@ -44,8 +34,19 @@ const TAB_DATA = [
         id: "education",
         content: (
           <ul className="list-disc pl-2">
-                <li>Asia Pacific University</li>
-                <li>Tsun Jin High School</li>
+                <li>Asia Pacific University - Degree Computer Science (CyberSecurity)</li>
+                <li>SMK Sri Sentosa - STPM</li>
+                <li>SMK USJ 8 - SPM</li>
+          </ul>
+        ),
+    },
+    {
+        title: "Award",
+        id: "award",
+        content: (
+          <ul className="list-disc pl-2">
+                <li>Petronas Inter-University CTF - Finalist</li>
+                <li>ABOH 2023 - Top 4</li>
           </ul>
         ),
     }
@@ -65,13 +66,12 @@ const AboutMe = () => {
         <section className="text-white grid" id="aboutMe">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:px-32 py-16 xl-gap-16 items-center">
                 <div>
-                    <img src="/AboutMe.png" alt="About Me" width={450} height={450} style={{ borderRadius: "25px" }}/>
+                    <img src="/AboutMe.jpeg" alt="About Me" width={450} height={450} style={{ borderRadius: "25px" }}/>
                 </div>
                 <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
                     <h1 className="text-4xl font-bold text-white mb-4">About Me</h1>
-                    <p className="text-base text-justify lg:text-lg">I am currently pursuing a degree in Cyber Security at APU, where I have been honing my skills in various technologies. I am familiar in frontend development, with expertise in React, Next.js, HTML, CSS, and I'm skilled in creating visually appealing and user-friendly interfaces using Tailwind CSS.
-                        Additionally, I've ventured into the world of blockchain development, particularly with Solidity, allowing me to build smart contracts for decentralized applications.
-                        My passion for technology and problem-solving has led me to actively participate in 11 hackathons this year, where I primarily serve as a Front End Developer. However, I am not limited to frontend tasks and often take on backend responsibilities, demonstrating my versatility and commitment to delivering complete solutions. </p>
+                    <p className="text-base text-justify lg:text-lg">I am currently a Degree student majoring in Computer Science specialised in Cyber Security at Asia Pacific University (APU). I am also a CTF player and I have took parts in several CTF competitions.
+                     I am a team-player, a friendly and a person who are willing to learn. </p>
                     <div className="flex flex-row mt-8">
 {/* 1e */}
                         <TabButton 
@@ -96,6 +96,14 @@ const AboutMe = () => {
                         >
                             {" "}
                             Education{" "}
+                        </TabButton>
+
+                        <TabButton 
+                        selectTab={() => handleTabChange("award")}
+                        active= {tab === "award"}
+                        >
+                            {" "}
+                            Award{" "}
                         </TabButton>
                         
                     </div>

@@ -2,12 +2,12 @@ import React from "react";
 
 const achievementsList = [
     {
-        metric: "Projects",
-        value: "10+",
+        metric: "CTF Joined",
+        value: "4",
     },
     {
         metric: "Awards",
-        value: "3+",
+        value: "1",
     },
     {
         metric: "Years",
