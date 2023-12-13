@@ -54,7 +54,7 @@ const HeroSection = () => {
               </Link> */}
              
               <Link
-                href="https://drive.google.com/file/d/1UImUW-oEu5CobTc3vHoVui9tIPpqrhKt/view?usp=sharing"
+                href="https://drive.google.com/file/d/1yL-Lc9z0R-K_Mk0UaCMzQEu4C6fJ27VA/view?usp=sharing"
                 className="px-6 inline-block py-3 rounded-full mr-4 border-solid border-2  border-emerald-500 hover:bg-emerald-400">
                 <span className="text-xl text-white">View my Resume</span>
               </Link>
